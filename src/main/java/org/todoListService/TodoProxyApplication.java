@@ -1,9 +1,9 @@
 package org.todoListService;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class TodoProxyApplication
 {
 

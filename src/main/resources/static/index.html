@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <input type="text" id="search" placeholder="Поиск" class="search-bar">
+        <div class="user-section">
+            <img src="images/user-icon.png" alt="User Icon" class="user-icon">
+        </div>
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <button id="todayBtn">Сегодня</button>
+            <button id="weekBtn">На неделю</button>
+            <div id="calendar-container">
+                <div id="calendar"></div>
+            </div>
+            <label>
+                <input type="checkbox" id="onlyIncomplete"> Только невыполненные
+            </label>
+        </div>
+        <div class="task-list-container">
+            <div class="sort-section">
+                <span id="sortDate" class="sort-date" data-order="desc">⬇ Сортировать по дате</span>
+            </div>
+            <div id="taskList"></div>
+        </div>
+    </div>
+</div>
+<div id="taskModal" class="modal">
+    <div class="modal-content">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDate"></p>
+        <input type="checkbox" class="status" id="modalStatus">
+        <label for="modalStatus"></label>
+        <hr style="width: 279px;">
+        <div class="modal-description" id="modalDescription"></div>
+        <button id="modalDoneBtn">Готово</button>
+    </div>
+</div>
+</body>
+</html>
